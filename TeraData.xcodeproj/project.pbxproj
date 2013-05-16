@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7222FABA1743DB6800E7E2E8 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7222FAB91743DB6800E7E2E8 /* CustomButton.m */; };
+		7222FABE1743E5BB00E7E2E8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7222FABD1743E5BB00E7E2E8 /* QuartzCore.framework */; };
+		7222FAC11744189D00E7E2E8 /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7222FAC01744189D00E7E2E8 /* PopUpViewController.m */; };
+		7222FAC3174424EA00E7E2E8 /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7222FAC2174424EA00E7E2E8 /* PopUpViewController.xib */; };
+		7222FAC6174428AB00E7E2E8 /* ChartButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7222FAC5174428AB00E7E2E8 /* ChartButton@2x.png */; };
+		7222FAC91744391C00E7E2E8 /* PopUpTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7222FAC81744391C00E7E2E8 /* PopUpTableViewCell.m */; };
+		7222FACB1744393400E7E2E8 /* PopUpTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7222FACA1744393400E7E2E8 /* PopUpTableViewCell.xib */; };
 		722DA07A1742C061009993B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722DA0791742C061009993B4 /* UIKit.framework */; };
 		722DA07C1742C061009993B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722DA07B1742C061009993B4 /* Foundation.framework */; };
 		722DA07E1742C061009993B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722DA07D1742C061009993B4 /* CoreGraphics.framework */; };
@@ -18,9 +25,37 @@
 		722DA0901742C062009993B4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 722DA08F1742C062009993B4 /* Default-568h@2x.png */; };
 		722DA0931742C062009993B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722DA0921742C062009993B4 /* ViewController.m */; };
 		722DA0961742C062009993B4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 722DA0941742C062009993B4 /* ViewController.xib */; };
+		722DA0A11742D6DD009993B4 /* SideMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722DA0A01742D6DD009993B4 /* SideMenuTableViewCell.m */; };
+		722DA0A31742D6F9009993B4 /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 722DA0A21742D6F9009993B4 /* SideMenuTableViewCell.xib */; };
+		726713D71745282A002DB811 /* blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713D11745282A002DB811 /* blue@2x.png */; };
+		726713D81745282A002DB811 /* green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713D21745282A002DB811 /* green@2x.png */; };
+		726713D91745282A002DB811 /* grid_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713D31745282A002DB811 /* grid_white@2x.png */; };
+		726713DA1745282A002DB811 /* orange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713D41745282A002DB811 /* orange@2x.png */; };
+		726713DB1745282A002DB811 /* purple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713D51745282A002DB811 /* purple@2x.png */; };
+		726713DC1745282A002DB811 /* red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713D61745282A002DB811 /* red@2x.png */; };
+		726713E41745552C002DB811 /* bottom_slider_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713DD1745552C002DB811 /* bottom_slider_bg.png */; };
+		726713E51745552C002DB811 /* graph_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713DE1745552C002DB811 /* graph_bg.png */; };
+		726713E61745552C002DB811 /* graph_on_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713DF1745552C002DB811 /* graph_on_blue.png */; };
+		726713E71745552C002DB811 /* LeftNav_BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713E01745552C002DB811 /* LeftNav_BG.png */; };
+		726713E81745552C002DB811 /* LeftNav_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713E11745552C002DB811 /* LeftNav_shadow.png */; };
+		726713E91745552C002DB811 /* walmart_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713E21745552C002DB811 /* walmart_logo.png */; };
+		726713EA1745552C002DB811 /* yellow_nav_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713E31745552C002DB811 /* yellow_nav_button.png */; };
+		726713EC17455E75002DB811 /* graph_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713EB17455E74002DB811 /* graph_off.png */; };
+		726713F017457033002DB811 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 726713EF17457033002DB811 /* UIColor+HexString.m */; };
+		726713F217457D33002DB811 /* bottom_slider_top_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713F117457D32002DB811 /* bottom_slider_top_shadow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7222FAB81743DB6800E7E2E8 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomButton.h; path = CustomWidgets/CustomButton.h; sourceTree = "<group>"; };
+		7222FAB91743DB6800E7E2E8 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomButton.m; path = CustomWidgets/CustomButton.m; sourceTree = "<group>"; };
+		7222FABD1743E5BB00E7E2E8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7222FABF1744189D00E7E2E8 /* PopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopUpViewController.h; path = ViewControllers/PopUpViewController.h; sourceTree = "<group>"; };
+		7222FAC01744189D00E7E2E8 /* PopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopUpViewController.m; path = ViewControllers/PopUpViewController.m; sourceTree = "<group>"; };
+		7222FAC2174424EA00E7E2E8 /* PopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopUpViewController.xib; path = NIBs/PopUpViewController.xib; sourceTree = "<group>"; };
+		7222FAC5174428AB00E7E2E8 /* ChartButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ChartButton@2x.png"; path = "Images/ChartButton@2x.png"; sourceTree = "<group>"; };
+		7222FAC71744391C00E7E2E8 /* PopUpTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopUpTableViewCell.h; path = TableViewCells/PopUpTableViewCell.h; sourceTree = "<group>"; };
+		7222FAC81744391C00E7E2E8 /* PopUpTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopUpTableViewCell.m; path = TableViewCells/PopUpTableViewCell.m; sourceTree = "<group>"; };
+		7222FACA1744393400E7E2E8 /* PopUpTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopUpTableViewCell.xib; path = TableViewCells/PopUpTableViewCell.xib; sourceTree = "<group>"; };
 		722DA0761742C061009993B4 /* TeraData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeraData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		722DA0791742C061009993B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		722DA07B1742C061009993B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,9 +69,29 @@
 		722DA08B1742C061009993B4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		722DA08D1742C062009993B4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		722DA08F1742C062009993B4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		722DA0911742C062009993B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		722DA0921742C062009993B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		722DA0911742C062009993B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ViewControllers/ViewController.h; sourceTree = "<group>"; };
+		722DA0921742C062009993B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ViewControllers/ViewController.m; sourceTree = "<group>"; };
 		722DA0951742C062009993B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		722DA09F1742D6DD009993B4 /* SideMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SideMenuTableViewCell.h; path = TableViewCells/SideMenuTableViewCell.h; sourceTree = "<group>"; };
+		722DA0A01742D6DD009993B4 /* SideMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SideMenuTableViewCell.m; path = TableViewCells/SideMenuTableViewCell.m; sourceTree = "<group>"; };
+		722DA0A21742D6F9009993B4 /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SideMenuTableViewCell.xib; path = TableViewCells/SideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		726713D11745282A002DB811 /* blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blue@2x.png"; path = "Images/blue@2x.png"; sourceTree = "<group>"; };
+		726713D21745282A002DB811 /* green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "green@2x.png"; path = "Images/green@2x.png"; sourceTree = "<group>"; };
+		726713D31745282A002DB811 /* grid_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "grid_white@2x.png"; path = "Images/grid_white@2x.png"; sourceTree = "<group>"; };
+		726713D41745282A002DB811 /* orange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "orange@2x.png"; path = "Images/orange@2x.png"; sourceTree = "<group>"; };
+		726713D51745282A002DB811 /* purple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "purple@2x.png"; path = "Images/purple@2x.png"; sourceTree = "<group>"; };
+		726713D61745282A002DB811 /* red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "red@2x.png"; path = "Images/red@2x.png"; sourceTree = "<group>"; };
+		726713DD1745552C002DB811 /* bottom_slider_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bottom_slider_bg.png; path = Images/bottom_slider_bg.png; sourceTree = "<group>"; };
+		726713DE1745552C002DB811 /* graph_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = graph_bg.png; path = Images/graph_bg.png; sourceTree = "<group>"; };
+		726713DF1745552C002DB811 /* graph_on_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = graph_on_blue.png; path = Images/graph_on_blue.png; sourceTree = "<group>"; };
+		726713E01745552C002DB811 /* LeftNav_BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LeftNav_BG.png; path = Images/LeftNav_BG.png; sourceTree = "<group>"; };
+		726713E11745552C002DB811 /* LeftNav_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LeftNav_shadow.png; path = Images/LeftNav_shadow.png; sourceTree = "<group>"; };
+		726713E21745552C002DB811 /* walmart_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = walmart_logo.png; path = Images/walmart_logo.png; sourceTree = "<group>"; };
+		726713E31745552C002DB811 /* yellow_nav_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellow_nav_button.png; path = Images/yellow_nav_button.png; sourceTree = "<group>"; };
+		726713EB17455E74002DB811 /* graph_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = graph_off.png; path = Images/graph_off.png; sourceTree = "<group>"; };
+		726713EE17457033002DB811 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexString.h"; path = "Helper/UIColor+HexString.h"; sourceTree = "<group>"; };
+		726713EF17457033002DB811 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "Helper/UIColor+HexString.m"; sourceTree = "<group>"; };
+		726713F117457D32002DB811 /* bottom_slider_top_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bottom_slider_top_shadow.png; path = Images/bottom_slider_top_shadow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7222FABE1743E5BB00E7E2E8 /* QuartzCore.framework in Frameworks */,
 				722DA07A1742C061009993B4 /* UIKit.framework in Frameworks */,
 				722DA07C1742C061009993B4 /* Foundation.framework in Frameworks */,
 				722DA07E1742C061009993B4 /* CoreGraphics.framework in Frameworks */,
@@ -53,6 +109,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7222FAB71743DB0000E7E2E8 /* CustomWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				7222FAB81743DB6800E7E2E8 /* CustomButton.h */,
+				7222FAB91743DB6800E7E2E8 /* CustomButton.m */,
+			);
+			name = CustomWidgets;
+			sourceTree = "<group>";
+		};
+		7222FAC41744288100E7E2E8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				726713DD1745552C002DB811 /* bottom_slider_bg.png */,
+				726713F117457D32002DB811 /* bottom_slider_top_shadow.png */,
+				726713DE1745552C002DB811 /* graph_bg.png */,
+				726713DF1745552C002DB811 /* graph_on_blue.png */,
+				726713EB17455E74002DB811 /* graph_off.png */,
+				726713E01745552C002DB811 /* LeftNav_BG.png */,
+				726713E11745552C002DB811 /* LeftNav_shadow.png */,
+				726713E21745552C002DB811 /* walmart_logo.png */,
+				726713E31745552C002DB811 /* yellow_nav_button.png */,
+				726713D11745282A002DB811 /* blue@2x.png */,
+				726713D21745282A002DB811 /* green@2x.png */,
+				726713D31745282A002DB811 /* grid_white@2x.png */,
+				726713D41745282A002DB811 /* orange@2x.png */,
+				726713D51745282A002DB811 /* purple@2x.png */,
+				726713D61745282A002DB811 /* red@2x.png */,
+				7222FAC5174428AB00E7E2E8 /* ChartButton@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		722DA06D1742C061009993B4 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +164,7 @@
 				722DA0791742C061009993B4 /* UIKit.framework */,
 				722DA07B1742C061009993B4 /* Foundation.framework */,
 				722DA07D1742C061009993B4 /* CoreGraphics.framework */,
+				7222FABD1743E5BB00E7E2E8 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,9 +174,12 @@
 			children = (
 				722DA0881742C061009993B4 /* AppDelegate.h */,
 				722DA0891742C061009993B4 /* AppDelegate.m */,
-				722DA0911742C062009993B4 /* ViewController.h */,
-				722DA0921742C062009993B4 /* ViewController.m */,
-				722DA0941742C062009993B4 /* ViewController.xib */,
+				722DA09D1742D610009993B4 /* NIBs */,
+				722DA09E1742D614009993B4 /* ViewControllers */,
+				726713ED17457004002DB811 /* Helper */,
+				7222FAB71743DB0000E7E2E8 /* CustomWidgets */,
+				722DA09C1742D60C009993B4 /* TableViewCells */,
+				7222FAC41744288100E7E2E8 /* Images */,
 				722DA0801742C061009993B4 /* Supporting Files */,
 			);
 			path = TeraData;
@@ -105,6 +197,48 @@
 				722DA08F1742C062009993B4 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		722DA09C1742D60C009993B4 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				722DA09F1742D6DD009993B4 /* SideMenuTableViewCell.h */,
+				722DA0A01742D6DD009993B4 /* SideMenuTableViewCell.m */,
+				722DA0A21742D6F9009993B4 /* SideMenuTableViewCell.xib */,
+				7222FAC71744391C00E7E2E8 /* PopUpTableViewCell.h */,
+				7222FAC81744391C00E7E2E8 /* PopUpTableViewCell.m */,
+				7222FACA1744393400E7E2E8 /* PopUpTableViewCell.xib */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		722DA09D1742D610009993B4 /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				722DA0941742C062009993B4 /* ViewController.xib */,
+				7222FAC2174424EA00E7E2E8 /* PopUpViewController.xib */,
+			);
+			name = NIBs;
+			sourceTree = "<group>";
+		};
+		722DA09E1742D614009993B4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				722DA0911742C062009993B4 /* ViewController.h */,
+				722DA0921742C062009993B4 /* ViewController.m */,
+				7222FABF1744189D00E7E2E8 /* PopUpViewController.h */,
+				7222FAC01744189D00E7E2E8 /* PopUpViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		726713ED17457004002DB811 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				726713EE17457033002DB811 /* UIColor+HexString.h */,
+				726713EF17457033002DB811 /* UIColor+HexString.m */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +297,25 @@
 				722DA08E1742C062009993B4 /* Default@2x.png in Resources */,
 				722DA0901742C062009993B4 /* Default-568h@2x.png in Resources */,
 				722DA0961742C062009993B4 /* ViewController.xib in Resources */,
+				722DA0A31742D6F9009993B4 /* SideMenuTableViewCell.xib in Resources */,
+				7222FAC3174424EA00E7E2E8 /* PopUpViewController.xib in Resources */,
+				7222FAC6174428AB00E7E2E8 /* ChartButton@2x.png in Resources */,
+				7222FACB1744393400E7E2E8 /* PopUpTableViewCell.xib in Resources */,
+				726713D71745282A002DB811 /* blue@2x.png in Resources */,
+				726713D81745282A002DB811 /* green@2x.png in Resources */,
+				726713D91745282A002DB811 /* grid_white@2x.png in Resources */,
+				726713DA1745282A002DB811 /* orange@2x.png in Resources */,
+				726713DB1745282A002DB811 /* purple@2x.png in Resources */,
+				726713DC1745282A002DB811 /* red@2x.png in Resources */,
+				726713E41745552C002DB811 /* bottom_slider_bg.png in Resources */,
+				726713E51745552C002DB811 /* graph_bg.png in Resources */,
+				726713E61745552C002DB811 /* graph_on_blue.png in Resources */,
+				726713E71745552C002DB811 /* LeftNav_BG.png in Resources */,
+				726713E81745552C002DB811 /* LeftNav_shadow.png in Resources */,
+				726713E91745552C002DB811 /* walmart_logo.png in Resources */,
+				726713EA1745552C002DB811 /* yellow_nav_button.png in Resources */,
+				726713EC17455E75002DB811 /* graph_off.png in Resources */,
+				726713F217457D33002DB811 /* bottom_slider_top_shadow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +329,11 @@
 				722DA0861742C061009993B4 /* main.m in Sources */,
 				722DA08A1742C061009993B4 /* AppDelegate.m in Sources */,
 				722DA0931742C062009993B4 /* ViewController.m in Sources */,
+				722DA0A11742D6DD009993B4 /* SideMenuTableViewCell.m in Sources */,
+				7222FABA1743DB6800E7E2E8 /* CustomButton.m in Sources */,
+				7222FAC11744189D00E7E2E8 /* PopUpViewController.m in Sources */,
+				7222FAC91744391C00E7E2E8 /* PopUpTableViewCell.m in Sources */,
+				726713F017457033002DB811 /* UIColor+HexString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +458,7 @@
 				722DA09B1742C062009993B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
