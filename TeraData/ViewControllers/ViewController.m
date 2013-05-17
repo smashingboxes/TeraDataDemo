@@ -49,6 +49,13 @@
     
     buttonArray = [[NSArray alloc]initWithObjects:@"Print Ads", @"Social Media", @"Email", @"In-Store", nil];
     
+    [[UINavigationBar appearance] setTitleTextAttributes: @{
+                                UITextAttributeTextColor: [UIColor whiteColor],
+                          UITextAttributeTextShadowColor: [UIColor clearColor],
+                         UITextAttributeTextShadowOffset: [NSValue valueWithUIOffset:UIOffsetMake(0.0f, 0.0f)],
+                                     UITextAttributeFont: [UIFont fontWithName:@"Helvetica-Bold" size:15.0f]
+     }];
+    
     [self setTitleForNavigationBarWithDataType:@"Print Ads"];
     [self loadButtonsForScrollView];
     [self createMenuButtons];
@@ -105,12 +112,12 @@
 #pragma mark - Initial Loading Methods
 
 -(void)loadButtonsForScrollView{
-    [buttonScrollView setContentSize:CGSizeMake(4330, 172)];
+    [buttonScrollView setContentSize:CGSizeMake(2800, 172)];
     
     for(int i = 0; i < 20; i++){
         NSString *buttonTitleString = [[NSString alloc]initWithFormat:@"WM%i",i+1];
         
-        CustomButton *aButton = [[CustomButton alloc]initWithFrame:CGRectMake(5 + (220*i), 5, 132, 133) andGraphImage:nil andTitle:buttonTitleString];
+        CustomButton *aButton = [[CustomButton alloc]initWithFrame:CGRectMake(5 + (140*i), 20, 132, 133) andGraphImage:nil andTitle:buttonTitleString];
         [aButton setDelegate:self];
         UIImage *theImage;
         switch (i) {
@@ -254,6 +261,7 @@
     
     cell.titleLabel.text = [buttonArray objectAtIndex:indexPath.row];
     cell.selectedView.hidden = ![[selectedArray objectAtIndex:indexPath.row]boolValue];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     /*CAGradientLayer *gradient = [CAGradientLayer layer];
     gradient.frame = cell.bounds;
