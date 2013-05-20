@@ -88,7 +88,7 @@
 }
 
 -(void)createMenuButtons{
-    UIBarButtonItem *buttonA = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(sideBarButtonPressed)];
+    UIBarButtonItem *buttonA = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(sideBarButtonPressed)];
     self.navigationItem.leftBarButtonItem = buttonA;
     
     UIBarButtonItem *buttonB = [[UIBarButtonItem alloc]initWithTitle:@"Menu" style:UIBarButtonItemStyleBordered target:self action:@selector(menuButtonPressed:)];

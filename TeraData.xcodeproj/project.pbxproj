@@ -227,7 +227,6 @@
 				722DA0911742C062009993B4 /* ViewController.h */,
 				722DA0921742C062009993B4 /* ViewController.m */,
 				7222FABF1744189D00E7E2E8 /* PopUpViewController.h */,
-				7222FAC01744189D00E7E2E8 /* PopUpViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -235,6 +234,7 @@
 		726713ED17457004002DB811 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				7222FAC01744189D00E7E2E8 /* PopUpViewController.m */,
 				726713EE17457033002DB811 /* UIColor+HexString.h */,
 				726713EF17457033002DB811 /* UIColor+HexString.m */,
 			);
