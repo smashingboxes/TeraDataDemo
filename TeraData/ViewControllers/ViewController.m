@@ -263,11 +263,11 @@
     CustomButton *theButton = sender;
     if(CGRectIntersectsRect(theButton.frame, graphScrollView.frame)){
         [theButton buttonPressed];
-        buttonScrollView.userInteractionEnabled = YES;
     }
     [theButton removeFromSuperview];
     [buttonScrollView addSubview:theButton];
     theButton.center = originalButtonPoint;
+    buttonScrollView.userInteractionEnabled = YES;
 }
 
 
