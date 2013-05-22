@@ -74,7 +74,7 @@
     
     cell.cellLabel.text = theString;
     
-    cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     rowCount += 1;
     
@@ -133,7 +133,12 @@
     if(delegate)
         [delegate optionSelected:cell.cellLabel.text];
     
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    cell.blueImageView.alpha = 0.0f;
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        cell.blueImageView.alpha = 1.0f;
+    }];
 }
 
 @end

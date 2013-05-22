@@ -10,6 +10,6 @@
 #import "CustomButton.h"
 #import "PopUpViewController.h"
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate, CustomButtonDelegate, PopUpViewControllerDelegate>
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate,CustomButtonDelegate, PopUpViewControllerDelegate>
 
 @end

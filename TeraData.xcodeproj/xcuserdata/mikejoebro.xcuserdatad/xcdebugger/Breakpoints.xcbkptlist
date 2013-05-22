@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "TeraData/ViewControllers/ViewController.m"
-         timestampString = "390506220.050269"
+         timestampString = "390933568.316315"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "199"
-         endingLineNumber = "199"
+         startingLineNumber = "214"
+         endingLineNumber = "214"
          landmarkName = "-sideBarButtonPressed"
          landmarkType = "5">
       </FileBreakpoint>
@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "TeraData/ViewControllers/ViewController.m"
-         timestampString = "390506220.050269"
+         timestampString = "390933568.316315"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "123"
-         endingLineNumber = "123"
+         startingLineNumber = "138"
+         endingLineNumber = "138"
          landmarkName = "-loadButtonsForScrollView"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,16 +47,16 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "TeraData/ViewControllers/ViewController.m"
-         timestampString = "390506220.050269"
+         timestampString = "390936205.670334"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "234"
-         endingLineNumber = "234"
+         startingLineNumber = "250"
+         endingLineNumber = "250"
          landmarkName = "-buttonDidReceivePress:withSender:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "TeraData/Helper/UIColor+HexString.m"
@@ -69,16 +69,29 @@
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "TeraData/ViewControllers/ViewController.m"
-         timestampString = "390770569.343981"
+         timestampString = "390932606.307644"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "101"
-         endingLineNumber = "101"
+         startingLineNumber = "115"
+         endingLineNumber = "115"
          landmarkName = "-createSelectedStates"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "TeraData/ViewControllers/ViewController.m"
+         timestampString = "390936205.670334"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "363"
+         endingLineNumber = "363"
+         landmarkName = "-scrollViewDidZoom:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

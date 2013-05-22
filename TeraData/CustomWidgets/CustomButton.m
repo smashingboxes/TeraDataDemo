@@ -15,18 +15,23 @@
 @property(nonatomic)UIImageView *graphImageView;
 @property(nonatomic)UIImageView *highlightedImageView;
 @property(nonatomic)id<CustomButtonDelegate> delegate;
+@property(nonatomic)BOOL isMoving;
 
 @end
 
 
 @implementation CustomButton
 
+@synthesize parentView;
 @synthesize storedGraphImage;
+@synthesize buttonTitle;
 @synthesize isActive;
+@synthesize isFocus;
 @synthesize titleLabel;
 @synthesize graphImageView;
 @synthesize highlightedImageView;
 @synthesize delegate;
+@synthesize isMoving;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -46,6 +51,7 @@
     if(self){
         isActive = NO;
         storedGraphImage = theImage;
+        buttonTitle = theTitle;
         titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
         titleLabel.center = CGPointMake(frame.size.width/2, 100);
         titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -58,27 +64,11 @@
         highlightedImageView = [[UIImageView alloc]initWithFrame:imageFrame];
         highlightedImageView.image = [UIImage imageNamed:@"graph_on_blue.png"];
         highlightedImageView.hidden = YES;
-        //highlightedImageView.layer.cornerRadius = 7.0f;
         [self addSubview:graphImageView];
         [self addSubview:highlightedImageView];
         [self addSubview:titleLabel];
         
-        //self.backgroundColor = [UIColor whiteColor];
-        //self.layer.cornerRadius = 7.0f;
-        // Set the colors for the gradient layer.
-        /*static NSMutableArray *colors = nil;
-        if (colors == nil) {
-            colors = [[NSMutableArray alloc] initWithCapacity:3];
-            UIColor *color = nil;
-            color = [UIColor colorWithRed:0.75 green:0.75 blue:0.75 alpha:1.0];
-            [colors addObject:(id)[color CGColor]];
-            color = [UIColor colorWithRed:0.50 green:0.50 blue:0.50 alpha:1.0];
-            [colors addObject:(id)[color CGColor]];
-            color = [UIColor colorWithRed:0.25 green:0.25 blue:0.25 alpha:1.0];
-            [colors addObject:(id)[color CGColor]];
-        }
-        [(CAGradientLayer *)self.layer setColors:colors];
-        [(CAGradientLayer *)self.layer setLocations:[NSArray arrayWithObjects:[NSNumber numberWithFloat:0.0], [NSNumber numberWithFloat:0.48], [NSNumber numberWithFloat:1.0], nil]];*/
+        isFocus = NO;
     }
     return self;
 }
@@ -108,15 +98,15 @@
 
 -(void)setHighlightedColor:(NSString *)theColor{
     if([theColor isEqualToString:@"Red"]){
-        highlightedImageView.backgroundColor = [UIColor redColor];
+        highlightedImageView.image = [UIImage imageNamed:@"graph_on_red.png"];
     }else if([theColor isEqualToString:@"Green"]){
-        highlightedImageView.backgroundColor = [UIColor greenColor];
+        highlightedImageView.image = [UIImage imageNamed:@"graph_on_green.png"];
     }else if([theColor isEqualToString:@"Blue"]){
-        highlightedImageView.backgroundColor = [UIColor blueColor];
+        highlightedImageView.image = [UIImage imageNamed:@"graph_on_blue.png"];
     }else if([theColor isEqualToString:@"Purple"]){
-        highlightedImageView.backgroundColor = [UIColor purpleColor];
+        highlightedImageView.image = [UIImage imageNamed:@"graph_on_purple.png"];
     }else if([theColor isEqualToString:@"Orange"]){
-        highlightedImageView.backgroundColor = [UIColor orangeColor];
+        highlightedImageView.image = [UIImage imageNamed:@"graph_on_orange.png"];
     }
 }
 
@@ -127,8 +117,34 @@
     // Do nothing.
 }
 
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    if(!isActive){
+        UITouch *touch = [[event allTouches] anyObject];
+        
+        if(!isFocus && delegate){
+            CGPoint startingPoint = [touch locationInView:parentView];
+            [delegate buttonDidBeginDragging:self withStartingPoint:startingPoint];
+            isFocus = YES;
+        }
+        
+        CGPoint pPrev = [touch previousLocationInView:self];
+        CGPoint p = [touch locationInView:self];
+        
+        CGPoint center = self.center;
+        center.x += p.x - pPrev.x;
+        center.y += p.y - pPrev.y;
+        self.center = center;
+    }
+}
+
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
-    [self buttonPressed];
+    if(!isFocus){
+        [self buttonPressed];
+    }else{
+        if(delegate)
+            [delegate buttonDidLetGo:self];
+        isFocus = NO;
+    }
 }
 
 -(void)buttonPressed{

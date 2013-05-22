@@ -11,6 +11,8 @@
 @implementation PopUpTableViewCell
 
 @synthesize cellLabel;
+@synthesize blueImageView;
+@synthesize yellowImageView;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

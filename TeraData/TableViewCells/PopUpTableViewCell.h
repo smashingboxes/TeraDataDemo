@@ -11,5 +11,7 @@
 @interface PopUpTableViewCell : UITableViewCell
 
 @property(nonatomic)IBOutlet UILabel *cellLabel;
+@property(nonatomic)IBOutlet UIImageView *blueImageView;
+@property(nonatomic)IBOutlet UIImageView *yellowImageView;
 
 @end
