@@ -452,12 +452,12 @@
 		722DA09A1742C062009993B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Brodeur (33K6W7R64A)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Brodeur (9U9Z7RKPMW)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TeraData/TeraData-Prefix.pch";
 				INFOPLIST_FILE = "TeraData/TeraData-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "D8CD8B85-311B-4A1F-9CC9-496F251D6467";
+				PROVISIONING_PROFILE = "2D9B28CC-97AA-44A8-A09C-BEFF18C8AF3F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -465,12 +465,12 @@
 		722DA09B1742C062009993B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Brodeur (33K6W7R64A)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Brodeur (9U9Z7RKPMW)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TeraData/TeraData-Prefix.pch";
 				INFOPLIST_FILE = "TeraData/TeraData-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "D8CD8B85-311B-4A1F-9CC9-496F251D6467";
+				PROVISIONING_PROFILE = "2D9B28CC-97AA-44A8-A09C-BEFF18C8AF3F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
