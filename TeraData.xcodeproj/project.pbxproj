@@ -48,6 +48,9 @@
 		726713EC17455E75002DB811 /* graph_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713EB17455E74002DB811 /* graph_off.png */; };
 		726713F017457033002DB811 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 726713EF17457033002DB811 /* UIColor+HexString.m */; };
 		726713F217457D33002DB811 /* bottom_slider_top_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 726713F117457D32002DB811 /* bottom_slider_top_shadow.png */; };
+		7275C3A1174E7A100011D585 /* 72icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7275C39E174E7A100011D585 /* 72icon.png */; };
+		7275C3A2174E7A100011D585 /* 144icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7275C39F174E7A100011D585 /* 144icon.png */; };
+		7275C3A3174E7A100011D585 /* iOS_Walmart_load.png in Resources */ = {isa = PBXBuildFile; fileRef = 7275C3A0174E7A100011D585 /* iOS_Walmart_load.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +105,9 @@
 		726713EE17457033002DB811 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexString.h"; path = "Helper/UIColor+HexString.h"; sourceTree = "<group>"; };
 		726713EF17457033002DB811 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexString.m"; path = "Helper/UIColor+HexString.m"; sourceTree = "<group>"; };
 		726713F117457D32002DB811 /* bottom_slider_top_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bottom_slider_top_shadow.png; path = Images/bottom_slider_top_shadow.png; sourceTree = "<group>"; };
+		7275C39E174E7A100011D585 /* 72icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 72icon.png; path = Images/72icon.png; sourceTree = "<group>"; };
+		7275C39F174E7A100011D585 /* 144icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 144icon.png; path = Images/144icon.png; sourceTree = "<group>"; };
+		7275C3A0174E7A100011D585 /* iOS_Walmart_load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iOS_Walmart_load.png; path = Images/iOS_Walmart_load.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,9 @@
 		7222FAC41744288100E7E2E8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7275C39E174E7A100011D585 /* 72icon.png */,
+				7275C39F174E7A100011D585 /* 144icon.png */,
+				7275C3A0174E7A100011D585 /* iOS_Walmart_load.png */,
 				726713DD1745552C002DB811 /* bottom_slider_bg.png */,
 				726713F117457D32002DB811 /* bottom_slider_top_shadow.png */,
 				726713DE1745552C002DB811 /* graph_bg.png */,
@@ -336,6 +345,9 @@
 				72469469174BEA3800A8AA7E /* Top_right_menu_blue@2x.png in Resources */,
 				7246946A174BEA3800A8AA7E /* Top_right_menu_yellow@2x.png in Resources */,
 				725AACDF174D137A00482588 /* BG.png in Resources */,
+				7275C3A1174E7A100011D585 /* 72icon.png in Resources */,
+				7275C3A2174E7A100011D585 /* 144icon.png in Resources */,
+				7275C3A3174E7A100011D585 /* iOS_Walmart_load.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,10 +452,12 @@
 		722DA09A1742C062009993B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Brodeur (33K6W7R64A)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TeraData/TeraData-Prefix.pch";
 				INFOPLIST_FILE = "TeraData/TeraData-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D8CD8B85-311B-4A1F-9CC9-496F251D6467";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -451,10 +465,12 @@
 		722DA09B1742C062009993B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Brodeur (33K6W7R64A)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TeraData/TeraData-Prefix.pch";
 				INFOPLIST_FILE = "TeraData/TeraData-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D8CD8B85-311B-4A1F-9CC9-496F251D6467";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

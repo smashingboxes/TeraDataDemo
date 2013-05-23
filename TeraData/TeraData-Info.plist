@@ -24,6 +24,13 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>72icon.png</string>
+		<string>144icon.png</string>
+	</array>
+	<key>UILaunchImageFile~ipad</key>
+	<string>iOS_Walmart_load.png</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
